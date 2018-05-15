@@ -9,20 +9,15 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"></script>
+    <!-- <script src="https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"></script> -->
         
     </head>
     <body>
         <div id="component-breakfast">
-            <the-breakfast
-                    v-for="(breakfastItem, breakfastId) in breakfastItems"
-                    v-bind:key="breakfastItem.id"
-                    v-bind:name="breakfastItem.name"
-                    v-on:click-breakfast-item="selectBreakfastItem"
-                >
-            </the-breakfast>
-        TESETTEST
-        
+            <button></button>
+            <ul>
+                <li v-for="breakfastItem in breakfastItems">{{ breakfastItem.name }}</li>
+            </ul>
         </div>
 
       
