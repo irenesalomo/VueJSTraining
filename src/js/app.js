@@ -45,8 +45,26 @@ var vmBreakfast = new Vue({
             myBreakfastName : "Your favourite breakfast item:",
         }
     },
-    
+    methods: {
+    }
+});
 
+var vmDynamicColor = new Vue({
+    el: '#dynamic-bg-color-area',
+    data() {
+        return {
+            x: 0,
+            counter : 1,
+        }
+    },
+    methods: {
+        xCoordinate(e) {
+            this.x = e.clientX;
+        }, 
+        incrementNumber() {
+            this.counter++;
+        }
+    }
 });
 
 // var target1 = document.querySelector('.thepulse-breakfast--icon:nth-of-type(1) .thepulse-breakfast--icon--name');

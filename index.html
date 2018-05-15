@@ -14,10 +14,14 @@
     </head>
     <body>
         <div id="component-breakfast">
-            <button></button>
             <ul>
                 <li v-for="breakfastItem in breakfastItems">{{ breakfastItem.name }}</li>
             </ul>
+        </div>
+        <div id="dynamic-bg-color-area" :style="{ backgroundColor: `hsl(${x}, 80%, 50%)`, height: '200px' }" @mousemove="xCoordinate">
+            <button @click="counter +=1">+</button>Quantity: {{ counter }}
+            <p>My mouse X Coordinate: {{ x }}</p>
+            
         </div>
 
       
