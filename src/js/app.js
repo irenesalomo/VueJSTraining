@@ -34,17 +34,12 @@ var vmBreakfast = new Vue({
             },
             {
                 id: 5,
-                name: 'Bacon-and-Egg',
+                name: 'Bacon',
             },
             {
                 id: 6,
                 name: 'Smoothies',
             },
-            {
-                id: 7,
-                name: 'Other',
-            },
-            
         ]
     },
     

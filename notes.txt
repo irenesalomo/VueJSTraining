@@ -1,0 +1,5 @@
+Directives: prefixed with v- to indicate they are special word provided by Vue and they will apply reactive behaviour to the rendered DOM.
+Example of directives:
+1. v-bind --> to bind data with certain html element i.e. title
+2. v-if --> conditional
+3 v-for --> loop
